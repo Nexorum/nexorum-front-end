@@ -18,6 +18,7 @@ import {
   SidebarHeader,
   SidebarRail,
 } from "@/components/ui/sidebar"
+import { Bubbles } from "./bubbles"
 
 // This is sample data.
 const data = {
@@ -89,16 +90,17 @@ const data = {
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
-    <Sidebar collapsible="icon" {...props} >
-      <SidebarHeader className="bg-[#f1f5f9]">
+    <Sidebar collapsible="icon" {...props} className="border" >
+      <SidebarHeader className="bg-[#C6DAF3]">
         <TeamSwitcher teams={data.teams} />
       </SidebarHeader>
-      <SidebarContent className="bg-[#f1f5f9]" >
+      <SidebarContent className="bg-[#C6DAF3]" >
         <NavMain items={data.navMain} />
         {/* <NavProjects projects={data.projects} /> */}
       </SidebarContent>
-      <SidebarFooter className="bg-[#f1f5f9]">
+      <SidebarFooter className="bg-[#C6DAF3] relative">
         <NavUser user={data.user} />
+        <Bubbles/>  
       </SidebarFooter>
       <SidebarRail />
     </Sidebar>
