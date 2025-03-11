@@ -33,7 +33,7 @@ export function NavMain({
   }[]
 }) {
   return (
-    <SidebarGroup className="bg-[#f1f5f9] ">
+    <SidebarGroup className="bg-[#C6DAF3] ">
       <SidebarGroupLabel>Platform</SidebarGroupLabel>
       <SidebarMenu >
         {items.map((item) => (

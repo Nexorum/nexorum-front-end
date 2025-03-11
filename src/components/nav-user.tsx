@@ -30,6 +30,7 @@ import {
   useSidebar,
 } from "@/components/ui/sidebar"
 
+
 export function NavUser({
   user,
 }: {
@@ -42,7 +43,7 @@ export function NavUser({
   const { isMobile } = useSidebar()
 
   return (
-    <SidebarMenu className="bg-white rounded-md border-2">
+    <SidebarMenu className="bg-white rounded-md border-2 z-30">
       <SidebarMenuItem>
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
