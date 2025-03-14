@@ -13,8 +13,8 @@ export default function DashboardLayout({
    return (
       <SidebarProvider>
          <AppSidebar />
-         <SidebarInset>
-            <main >
+         <SidebarInset className="rounded-2xl my-2 mr-2">
+            <main>
                {children}
             </main>
          </SidebarInset>
